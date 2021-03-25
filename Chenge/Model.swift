@@ -3,7 +3,15 @@
 //  Chenge
 //
 //  Created by Aleksander Kulikov on 30.11.2020.
-//
+//Украина
+// https://bank.gov.ua/NBU_Exchange/exchange?date=19.12.2017
+//<?xml version="1.0" encoding="windows-1251"?> <CURRENCYCOURSE> <ROW>
+// <StartDate>06.02.2018</StartDate>
+//<TimeSign>0000</TimeSign>
+//<CurrencyCode>356</CurrencyCode>
+//<CurrencyCodeL>INR</CurrencyCodeL>
+//<Units>1000</Units>
+//<Amount>432.7827</Amount> </ROW>
 
 import UIKit
 //<NumCode>036</NumCode>
