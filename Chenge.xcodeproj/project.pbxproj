@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C703CB9E25817579008AFAEA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C703CB9D25817579008AFAEA /* SettingsController.swift */; };
-		C715968125C1AE3E005200E8 /* icons8-money_bag.png in Resources */ = {isa = PBXBuildFile; fileRef = C715968025C1AE3E005200E8 /* icons8-money_bag.png */; };
 		C74E8D722566DEA9008C6B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E8D712566DEA9008C6B1B /* AppDelegate.swift */; };
 		C74E8D742566DEA9008C6B1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E8D732566DEA9008C6B1B /* SceneDelegate.swift */; };
 		C74E8D7E2566DEA9008C6B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74E8D7C2566DEA9008C6B1B /* LaunchScreen.storyboard */; };
 		C761C46225A2420200CDABBC /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C761C46125A2420200CDABBC /* CourseCell.swift */; };
 		C77636AF25AB8ABC00E59A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77636AE25AB8ABC00E59A63 /* Assets.xcassets */; };
+		C77E4F81261E4C5B00F945AE /* bag_money.png in Resources */ = {isa = PBXBuildFile; fileRef = C77E4F80261E4C5B00F945AE /* bag_money.png */; };
 		C78124E82593775300793698 /* ConverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78124E72593775300793698 /* ConverterController.swift */; };
 		C7A0D39A25B9DCB000CBB8C0 /* СoursesControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0D39925B9DCB000CBB8C0 /* СoursesControllerCell.swift */; };
 		C7AF5EEE2597DE3800FF4961 /* SelectCurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF5EED2597DE3800FF4961 /* SelectCurrencyController.swift */; };
@@ -25,14 +25,14 @@
 
 /* Begin PBXFileReference section */
 		C703CB9D25817579008AFAEA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		C715968025C1AE3E005200E8 /* icons8-money_bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-money_bag.png"; sourceTree = "<group>"; };
 		C74E8D6E2566DEA9008C6B1B /* Chenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74E8D712566DEA9008C6B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C74E8D712566DEA9008C6B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C74E8D732566DEA9008C6B1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C74E8D7D2566DEA9008C6B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74E8D7F2566DEA9008C6B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C761C46125A2420200CDABBC /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		C77636AE25AB8ABC00E59A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C77E4F80261E4C5B00F945AE /* bag_money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bag_money.png; sourceTree = "<group>"; };
 		C78124E72593775300793698 /* ConverterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterController.swift; sourceTree = "<group>"; };
 		C7A0D39925B9DCB000CBB8C0 /* СoursesControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СoursesControllerCell.swift"; sourceTree = "<group>"; };
 		C7AF5EED2597DE3800FF4961 /* SelectCurrencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyController.swift; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 			children = (
 				C74E8D712566DEA9008C6B1B /* AppDelegate.swift */,
 				C74E8D732566DEA9008C6B1B /* SceneDelegate.swift */,
-				C703CB9D25817579008AFAEA /* SettingsController.swift */,
 				C7D04C01258CF34A008A0FC3 /* Main.storyboard */,
+				C703CB9D25817579008AFAEA /* SettingsController.swift */,
 				C761C46125A2420200CDABBC /* CourseCell.swift */,
 				C7B0E82C257E9E6100FFF33D /* СoursesController.swift */,
 				C78124E72593775300793698 /* ConverterController.swift */,
@@ -85,8 +85,8 @@
 				C77636AE25AB8ABC00E59A63 /* Assets.xcassets */,
 				C74E8D7C2566DEA9008C6B1B /* LaunchScreen.storyboard */,
 				C74E8D7F2566DEA9008C6B1B /* Info.plist */,
+				C77E4F80261E4C5B00F945AE /* bag_money.png */,
 				C7B0E825257515F200FFF33D /* data.xml */,
-				C715968025C1AE3E005200E8 /* icons8-money_bag.png */,
 			);
 			path = Chenge;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 				C7B0E826257515F200FFF33D /* data.xml in Resources */,
 				C7D04C02258CF34A008A0FC3 /* Main.storyboard in Resources */,
 				C77636AF25AB8ABC00E59A63 /* Assets.xcassets in Resources */,
-				C715968125C1AE3E005200E8 /* icons8-money_bag.png in Resources */,
+				C77E4F81261E4C5B00F945AE /* bag_money.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

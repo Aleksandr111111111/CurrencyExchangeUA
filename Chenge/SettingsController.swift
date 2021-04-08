@@ -27,6 +27,7 @@ class SettingsController: UIViewController {
         
         
         
+        
         // Do any addit/Users/avkulikov/Documents/doki/Chenge/Chenge/SettingsController.swiftional setup after loading the view.
     }
         
