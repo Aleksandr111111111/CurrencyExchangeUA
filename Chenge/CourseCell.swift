@@ -13,10 +13,10 @@ class CourseCell: UITableViewCell {
     @IBOutlet weak var labelCurrencyName: UILabel!
     @IBOutlet weak var labelCoerse: UILabel!
     
-    func initCell(currency: Currency) {
-        imageFlag.image = currency.imageFlag
-        labelCurrencyName.text = currency.Name
-        labelCoerse.text = currency.Value
+    func initCell(currencye: Currencye) {
+        imageFlag.image = currencye.imageFlag
+        labelCurrencyName.text = currencye.CurrencyCodeL
+        labelCoerse.text = currencye.Amount
     }
     
     override func awakeFromNib() {

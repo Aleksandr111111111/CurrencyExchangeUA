@@ -1,1 +1,483 @@
-<?xml version="1.0" encoding="windows-1251"?><ValCurs Date="02.03.2002" name="Foreign Currency Market"><Valute ID="R01010"><NumCode>036</NumCode><CharCode>AUD</CharCode><Nominal>1</Nominal><Name>Австралийский доллар</Name><Value>16,0102</Value></Valute><Valute ID="R01035"><NumCode>826</NumCode><CharCode>GBP</CharCode><Nominal>1</Nominal><Name>Фунт стерлингов Соединенного королевства</Name><Value>43,8254</Value></Valute><Valute ID="R01090"><NumCode>974</NumCode><CharCode>BYR</CharCode><Nominal>1000</Nominal><Name>Белорусских рублей</Name><Value>18,4290</Value></Valute><Valute ID="R01215"><NumCode>208</NumCode><CharCode>DKK</CharCode><Nominal>10</Nominal><Name>Датских крон</Name><Value>36,1010</Value></Valute><Valute ID="R01235"><NumCode>840</NumCode><CharCode>USD</CharCode><Nominal>1</Nominal><Name>Доллар США</Name><Value>30,9436</Value></Valute><Valute ID="R01239"><NumCode>978</NumCode><CharCode>EUR</CharCode><Nominal>1</Nominal><Name>Евро</Name><Value>26,8343</Value></Valute><Valute ID="R01310"><NumCode>352</NumCode><CharCode>ISK</CharCode><Nominal>100</Nominal><Name>Исландских крон</Name><Value>30,7958</Value></Valute><Valute ID="R01335"><NumCode>398</NumCode><CharCode>KZT</CharCode><Nominal>100</Nominal><Name>Казахстанских тенге</Name><Value>20,3393</Value></Valute><Valute ID="R01350"><NumCode>124</NumCode><CharCode>CAD</CharCode><Nominal>1</Nominal><Name>Канадский доллар</Name><Value>19,3240</Value></Valute><Valute ID="R01535"><NumCode>578</NumCode><CharCode>NOK</CharCode><Nominal>10</Nominal><Name>Норвежских крон</Name><Value>34,7853</Value></Valute><Valute ID="R01589"><NumCode>960</NumCode><CharCode>XDR</CharCode><Nominal>1</Nominal><Name>СДР (специальные права заимствования)</Name><Value>38,4205</Value></Valute><Valute ID="R01625"><NumCode>702</NumCode><CharCode>SGD</CharCode><Nominal>1</Nominal><Name>Сингапурский доллар</Name><Value>16,8878</Value></Valute><Valute ID="R01700"><NumCode>792</NumCode><CharCode>TRL</CharCode><Nominal>1000000</Nominal><Name>Турецких лир</Name><Value>22,2616</Value></Valute><Valute ID="R01720"><NumCode>980</NumCode><CharCode>UAH</CharCode><Nominal>10</Nominal><Name>Украинских гривен</Name><Value>58,1090</Value></Valute><Valute ID="R01770"><NumCode>752</NumCode><CharCode>SEK</CharCode><Nominal>10</Nominal><Name>Шведских крон</Name><Value>29,5924</Value></Valute><Valute ID="R01775"><NumCode>756</NumCode><CharCode>CHF</CharCode><Nominal>1</Nominal><Name>Швейцарский франк</Name><Value>18,1861</Value></Valute><Valute ID="R01820"><NumCode>392</NumCode><CharCode>JPY</CharCode><Nominal>100</Nominal><Name>Японских иен</Name><Value>23,1527</Value></Valute></ValCurs>
+<?xml version="1.0" encoding="windows-1251"?>
+<CURRENCYCOURSE>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>036</CurrencyCode>
+    <CurrencyCodeL>AUD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>21.2698</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>933</CurrencyCode>
+    <CurrencyCodeL>BYN</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>10.5806</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>975</CurrencyCode>
+    <CurrencyCodeL>BGN</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>16.9569</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>410</CurrencyCode>
+    <CurrencyCodeL>KRW</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>2.4909</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>344</CurrencyCode>
+    <CurrencyCodeL>HKD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>3.5881</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>208</CurrencyCode>
+    <CurrencyCodeL>DKK</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>4.4576</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>840</CurrencyCode>
+    <CurrencyCodeL>USD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>27.9094</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>978</CurrencyCode>
+    <CurrencyCodeL>EUR</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>33.1522</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>818</CurrencyCode>
+    <CurrencyCodeL>EGP</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>1.7766</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>392</CurrencyCode>
+    <CurrencyCodeL>JPY</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>2.5415</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>985</CurrencyCode>
+    <CurrencyCodeL>PLN</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>7.3034</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>356</CurrencyCode>
+    <CurrencyCodeL>INR</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>3.7344</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>124</CurrencyCode>
+    <CurrencyCodeL>CAD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>22.1855</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>191</CurrencyCode>
+    <CurrencyCodeL>HRK</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>4.3747</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>484</CurrencyCode>
+    <CurrencyCodeL>MXN</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>1.3848</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>498</CurrencyCode>
+    <CurrencyCodeL>MDL</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>1.5533</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>376</CurrencyCode>
+    <CurrencyCodeL>ILS</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>8.4852</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>554</CurrencyCode>
+    <CurrencyCodeL>NZD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>19.6524</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>578</CurrencyCode>
+    <CurrencyCodeL>NOK</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>3.2763</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>710</CurrencyCode>
+    <CurrencyCodeL>ZAR</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>1.9143</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>643</CurrencyCode>
+    <CurrencyCodeL>RUB</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>3.6128</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>946</CurrencyCode>
+    <CurrencyCodeL>RON</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>6.738</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>360</CurrencyCode>
+    <CurrencyCodeL>IDR</CurrencyCodeL>
+    <Units>1000</Units>
+    <Amount>1.9157</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>682</CurrencyCode>
+    <CurrencyCodeL>SAR</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>7.4421</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>702</CurrencyCode>
+    <CurrencyCodeL>SGD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>20.7984</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>960</CurrencyCode>
+    <CurrencyCodeL>XDR</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>39.721</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>398</CurrencyCode>
+    <CurrencyCodeL>KZT</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>6.4428</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>949</CurrencyCode>
+    <CurrencyCodeL>TRY</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>3.4225</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>348</CurrencyCode>
+    <CurrencyCodeL>HUF</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>9.2587</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>826</CurrencyCode>
+    <CurrencyCodeL>GBP</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>38.2512</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>203</CurrencyCode>
+    <CurrencyCodeL>CZK</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>1.2778</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>752</CurrencyCode>
+    <CurrencyCodeL>SEK</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>3.2599</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>756</CurrencyCode>
+    <CurrencyCodeL>CHF</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>30.1072</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>156</CurrencyCode>
+    <CurrencyCodeL>CNY</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>4.2569</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>944</CurrencyCode>
+    <CurrencyCodeL>AZN</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>16.3778</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>012</CurrencyCode>
+    <CurrencyCodeL>DZD</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>2.0766</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>764</CurrencyCode>
+    <CurrencyCodeL>THB</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>8.8992</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>986</CurrencyCode>
+    <CurrencyCodeL>BRL</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>4.8463</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>051</CurrencyCode>
+    <CurrencyCodeL>AMD</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>5.238</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>784</CurrencyCode>
+    <CurrencyCodeL>AED</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>7.5749</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>704</CurrencyCode>
+    <CurrencyCodeL>VND</CurrencyCodeL>
+    <Units>1000</Units>
+    <Amount>1.2057</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>368</CurrencyCode>
+    <CurrencyCodeL>IQD</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>1.9057</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>364</CurrencyCode>
+    <CurrencyCodeL>IRR</CurrencyCodeL>
+    <Units>10000</Units>
+    <Amount>6.6244</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>981</CurrencyCode>
+    <CurrencyCodeL>GEL</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>8.1066</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>422</CurrencyCode>
+    <CurrencyCodeL>LBP</CurrencyCodeL>
+    <Units>100</Units>
+    <Amount>1.8456</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>434</CurrencyCode>
+    <CurrencyCodeL>LYD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>6.1267</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>458</CurrencyCode>
+    <CurrencyCodeL>MYR</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>6.7131</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>504</CurrencyCode>
+    <CurrencyCodeL>MAD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>3.0694</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>586</CurrencyCode>
+    <CurrencyCodeL>PKR</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>1.8264</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>941</CurrencyCode>
+    <CurrencyCodeL>RSD</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>2.7753</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>417</CurrencyCode>
+    <CurrencyCodeL>KGS</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>3.2812</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>972</CurrencyCode>
+    <CurrencyCodeL>TJS</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>2.4591</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>050</CurrencyCode>
+    <CurrencyCodeL>BDT</CurrencyCodeL>
+    <Units>10</Units>
+    <Amount>3.281</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>788</CurrencyCode>
+    <CurrencyCodeL>TND</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>9.9395</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>934</CurrencyCode>
+    <CurrencyCodeL>TMT</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>7.9493</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>860</CurrencyCode>
+    <CurrencyCodeL>UZS</CurrencyCodeL>
+    <Units>1000</Units>
+    <Amount>2.6534</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>959</CurrencyCode>
+    <CurrencyCodeL>XAU</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>48552.87</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>961</CurrencyCode>
+    <CurrencyCodeL>XAG</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>700.25</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>962</CurrencyCode>
+    <CurrencyCodeL>XPT</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>33699.21</Amount>
+</ROW>
+  <ROW>
+    <StartDate>12.04.2021</StartDate>
+    <TimeSign>0000</TimeSign>
+    <CurrencyCode>964</CurrencyCode>
+    <CurrencyCodeL>XPD</CurrencyCodeL>
+    <Units>1</Units>
+    <Amount>73459.49</Amount>
+</ROW>
+</CURRENCYCOURSE>

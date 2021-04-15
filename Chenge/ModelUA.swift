@@ -1,53 +1,57 @@
 //
-//  Model.swift
+//  ModelUA.swift
 //  Chenge
 //
-//  Created by Aleksander Kulikov on 30.11.2020.
+//  Created by Aleksander Kulikov on 09.04.2021.
+//http://www.cbr.ru/scripts/XML_daily.asp?date_req=02/03/2002
 //Украина
 // https://bank.gov.ua/NBU_Exchange/exchange?date=19.12.2017
-//<?xml version="1.0" encoding="windows-1251"?> <CURRENCYCOURSE> <ROW>
+//<?xml version="1.0" encoding="windows-1251"?> <CURRENCYCOURSE>
+//<ROW>
 // <StartDate>06.02.2018</StartDate>
-//<TimeSign>0000</TimeSign>
-//<CurrencyCode>356</CurrencyCode>
-//<CurrencyCodeL>INR</CurrencyCodeL>
-//<Units>1000</Units>
-//<Amount>432.7827</Amount> </ROW>
+// <TimeSign>0000</TimeSign>
+// <CurrencyCode>356</CurrencyCode>
+// <CurrencyCodeL>INR</CurrencyCodeL>
+// <Units>1000</Units>
+// <Amount>432.7827</Amount>
+// </ROW>
+ 
+ //<NumCode>036</NumCode>
+ //<CharCode>AUD</CharCode>-----
+ //<Nominal>1</Nominal>   1*16.0102----
+ //<Name>¿‚ÒÚ‡ÎËÈÒÍËÈ ‰ÓÎÎ‡</Name>
+ //<Value>16,0102</Value>-------
 
+ 
 import UIKit
-//<NumCode>036</NumCode>
-//<CharCode>AUD</CharCode>
-//<Nominal>1</Nominal>   1*16.0102
-//<Name>¿‚ÒÚ‡ÎËÈÒÍËÈ ‰ÓÎÎ‡</Name>
-//<Value>16,0102</Value>
-//http://www.cbr.ru/scripts/XML_daily.asp?date_req=02/03/2002
 
-class Currency {
-    var NumCode: String?
-    var CharCode: String?
-    var Name: String?
+class Currencye {
+    var CurrencyCode: String?
+    var CurrencyCodeL: String?
+   // var Name: String?
     
-    var Nominal: String?
-    var NominalDouble: Double?
+    var Units: String?
+    var UnitsDouble: Double?
     
-    var Value: String?
-    var ValueDouble: Double?
+    var Amount: String?
+    var AmountDouble: Double?
     
     var imageFlag:UIImage? {
-        if let CharCode = CharCode {
+        if let CharCode = CurrencyCodeL {
             return UIImage(named: CharCode)
         }
         return nil
     }
     
     
-    class func rouble () -> Currency {
-        let r = Currency ()
-        r.CharCode = "RUR"
-        r.Name = "Росийский рубль"
-        r.Nominal = "1"
-        r.NominalDouble = 1
-        r.Value = "1"
-        r.ValueDouble = 1
+    class func ua () -> Currencye {
+        let r = Currencye ()
+        r.CurrencyCodeL = "UAH"
+       // r.Name = "Росийский рубль"
+        r.Units = "1"
+        r.UnitsDouble = 1
+        r.Amount = "1"
+        r.AmountDouble = 1
         
         return r
         
@@ -55,20 +59,20 @@ class Currency {
     
 }
 
-class Model: NSObject, XMLParserDelegate {
-    static let shared = Model()
+class ModelUA: NSObject, XMLParserDelegate {
+    static let shared = ModelUA()
     
-    var currencies: [Currency] = []
+    var currencies: [Currencye] = []
     var currentDate: String = ""
     
-    var fromCurrency: Currency = Currency.rouble()
-    var toCurrency: Currency = Currency.rouble()
+    var fromCurrency: Currencye = Currencye.ua()
+    var toCurrency: Currencye = Currencye.ua()
     
     func convert(amount: Double?) -> String {
         if amount == nil {
             return ""
         }
-        let d = ( (fromCurrency.NominalDouble! * fromCurrency.ValueDouble!) / (toCurrency.NominalDouble! * toCurrency.ValueDouble!) ) * amount!
+        let d = ( (fromCurrency.UnitsDouble! * fromCurrency.AmountDouble!) / (toCurrency.UnitsDouble! * toCurrency.AmountDouble!) ) * amount!
         print(d)
         return String(d)
     }
@@ -91,7 +95,7 @@ class Model: NSObject, XMLParserDelegate {
 // Загрузка XML с cbr.ru и сохранение его в каталоге
     func loadXMLFile(date: Date?) {
         
-        var strUrl = "https://www.cbr.ru/scripts/XML_daily.asp?date_req="
+        var strUrl = "https://bank.gov.ua/NBU_Exchange/exchange?date="
         
         if date != nil {
             let dateFormater = DateFormatter()
@@ -132,7 +136,7 @@ class Model: NSObject, XMLParserDelegate {
     // распарсить XML и положить его в currencies: [Currency] и отправить уведомление о том что данные обновленны
     func parseXML() {
         
-        currencies = [Currency.rouble()]
+        currencies = [Currencye.ua()]
         
         let parser = XMLParser(contentsOf: urlForXML)
         parser?.delegate = self
@@ -143,16 +147,16 @@ class Model: NSObject, XMLParserDelegate {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "dataRefreshed"), object: self)
         
         for c in currencies {
-            if c.CharCode == fromCurrency.CharCode {
+            if c.CurrencyCodeL == fromCurrency.CurrencyCodeL {
                 fromCurrency = c
             }
             
-            if c.CharCode == toCurrency.CharCode {
+            if c.CurrencyCodeL == toCurrency.CurrencyCodeL {
                 toCurrency = c
             }
         }
     }
-    var currentCurrency: Currency?
+    var currentCurrency: Currencye?
     
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -163,8 +167,8 @@ class Model: NSObject, XMLParserDelegate {
             }
         }
         
-        if elementName == "Valute" {
-            currentCurrency = Currency()
+        if elementName == "ROW" {
+            currentCurrency = Currencye()
         }
         
     }
@@ -177,32 +181,31 @@ class Model: NSObject, XMLParserDelegate {
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        if  elementName == "NumCode" {
-            currentCurrency?.NumCode = currentCharacters
+        if  elementName == "CurrencyCode" {
+            currentCurrency?.CurrencyCode = currentCharacters
             }
         
-        if  elementName == "CharCode" {
-            currentCurrency?.CharCode = currentCharacters
+        if  elementName == "CurrencyCodeL" {
+            currentCurrency?.CurrencyCodeL = currentCharacters
             }
         
-        if  elementName == "Name" {
+      /*  if  elementName == "Name" {
             currentCurrency?.Name = currentCharacters
+            }*/
+        
+        if  elementName == "Units" {
+            currentCurrency?.Units = currentCharacters
+            currentCurrency?.UnitsDouble = Double(currentCharacters.replacingOccurrences(of: ",", with: "."))
             }
         
-        if  elementName == "Nominal" {
-            currentCurrency?.Nominal = currentCharacters
-            currentCurrency?.NominalDouble = Double(currentCharacters.replacingOccurrences(of: ",", with: "."))
+        if  elementName == "Amount" {
+            currentCurrency?.Amount = currentCharacters
+            currentCurrency?.AmountDouble = Double(currentCharacters.replacingOccurrences(of: ",", with: "."))
             }
         
-        if  elementName == "Value" {
-            currentCurrency?.Value = currentCharacters
-            currentCurrency?.ValueDouble = Double(currentCharacters.replacingOccurrences(of: ",", with: "."))
-            }
-        
-        if elementName == "Valute" {
+        if elementName == "ROW" {
             currencies.append(currentCurrency!)
             }
-        
     }
-    
 }
+

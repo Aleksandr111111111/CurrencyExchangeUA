@@ -13,9 +13,9 @@ class CoursesControllerCell: UITableViewCell {
     @IBOutlet weak var imageFlag: UIImageView!
     @IBOutlet weak var labelCurrencyName: UILabel!
     
-    func initCelll(currency: Currency) {
-        imageFlag.image = currency.imageFlag
-        labelCurrencyName.text = currency.Name
+    func initCelll(currencye: Currencye) {
+        imageFlag.image = currencye.imageFlag
+        labelCurrencyName.text = currencye.CurrencyCodeL
     }
     
     override func awakeFromNib() {

@@ -11,7 +11,7 @@ class СoursesController: UITableViewController {
     
     
     @IBAction func pushRefrehAction(_ sender: Any) {
-        Model.shared.loadXMLFile(date: nil)
+        ModelUA.shared.loadXMLFile(date: nil)
     }
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class СoursesController: UITableViewController {
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-                self.navigationItem.title = Model.shared.currentDate
+                self.navigationItem.title = ModelUA.shared.currentDate
                 
                 let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.refresh, target: self, action: #selector(self.pushRefrehAction(_:)))
                 self.navigationItem.rightBarButtonItem = barButtonItem
@@ -60,7 +60,7 @@ class СoursesController: UITableViewController {
         }
         
 
-        navigationItem.title = Model.shared.currentDate
+        navigationItem.title = ModelUA.shared.currentDate
         
        
 
@@ -71,7 +71,7 @@ class СoursesController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewDidAppear(_ animated: Bool) {
-        Model.shared.loadXMLFile(date: nil)
+        ModelUA.shared.loadXMLFile(date: nil)
     }
 
     // MARK: - Table view data source
@@ -83,15 +83,15 @@ class СoursesController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Model.shared.currencies.count
+        return ModelUA.shared.currencies.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CourseCell
         
-        let courseForCell = Model.shared.currencies[indexPath.row]
-        cell.initCell(currency: courseForCell)
+        let courseForCell = ModelUA.shared.currencies[indexPath.row]
+        cell.initCell(currencye: courseForCell)
         
 //        cell.textLabel?.text = courseForCell.Name
 //        cell.detailTextLabel?.text = courseForCell.Value

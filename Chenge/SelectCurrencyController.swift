@@ -35,27 +35,27 @@ class SelectCurrencyController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Model.shared.currencies.count
+        return ModelUA.shared.currencies.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CoursesControllerCell
         
-        let currentCurrency = Model.shared.currencies[indexPath.row]
-        cell.initCelll(currency: currentCurrency)
+        let currentCurrency = ModelUA.shared.currencies[indexPath.row]
+        cell.initCelll(currencye: currentCurrency)
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCurrency: Currency = Model.shared.currencies[indexPath.row]
+        let selectedCurrency: Currencye = ModelUA.shared.currencies[indexPath.row]
         if flagCurrency == .from {
-            Model.shared.fromCurrency = selectedCurrency
+            ModelUA.shared.fromCurrency = selectedCurrency
         }
         
         if flagCurrency == .to {
-            Model.shared.toCurrency = selectedCurrency
+            ModelUA.shared.toCurrency = selectedCurrency
         }
         
         dismiss(animated: true, completion: nil)

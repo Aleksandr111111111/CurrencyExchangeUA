@@ -34,13 +34,13 @@ class ConverterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textFrom.delegate = self
-        labelCorsesFordata.text = "курс валюты за дату, \(Model.shared.currentDate)"
+        labelCorsesFordata.text = "курс валюты за дату, \(ModelUA.shared.currentDate)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         refreshButtons()
         textFromEditingChange(self)
-        labelCorsesFordata.text = "Курс валют за дату, \(Model.shared.currentDate)"
+        labelCorsesFordata.text = "Курс валют за дату, \(ModelUA.shared.currentDate)"
         navigationItem.rightBarButtonItem = nil
     }
     
@@ -52,12 +52,12 @@ class ConverterController: UIViewController {
     
     @IBAction func textFromEditingChange(_ sender: Any) {
         let amount = Double(textFrom.text!)
-        textTo.text = Model.shared.convert(amount: amount)
+        textTo.text = ModelUA.shared.convert(amount: amount)
     }
     
     func refreshButtons() {
-        buttonFrom.setTitle(Model.shared.fromCurrency.CharCode, for: UIControl.State.normal)
-        buttonTo.setTitle(Model.shared.toCurrency.CharCode, for: UIControl.State.normal)
+        buttonFrom.setTitle(ModelUA.shared.fromCurrency.CurrencyCodeL, for: UIControl.State.normal)
+        buttonTo.setTitle(ModelUA.shared.toCurrency.CurrencyCodeL, for: UIControl.State.normal)
     }
 
 }

@@ -13,7 +13,7 @@ class SettingsController: UIViewController {
     
     
     @IBAction func pushShowCourses(_ sender: Any) {
-        Model.shared.loadXMLFile(date: datePicker.date)
+        ModelUA.shared.loadXMLFile(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
     
