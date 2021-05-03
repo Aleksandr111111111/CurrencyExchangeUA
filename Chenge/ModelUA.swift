@@ -1,7 +1,6 @@
 //
 //  ModelUA.swift
 //  Chenge
-//
 //  Created by Aleksander Kulikov on 09.04.2021.
 //http://www.cbr.ru/scripts/XML_daily.asp?date_req=02/03/2002
 //Украина
@@ -15,12 +14,6 @@
 // <Units>1000</Units>
 // <Amount>432.7827</Amount>
 // </ROW>
- 
- //<NumCode>036</NumCode>
- //<CharCode>AUD</CharCode>-----
- //<Nominal>1</Nominal>   1*16.0102----
- //<Name>¿‚ÒÚ‡ÎËÈÒÍËÈ ‰ÓÎÎ‡</Name>
- //<Value>16,0102</Value>-------
 
  
 import UIKit
@@ -189,9 +182,6 @@ class ModelUA: NSObject, XMLParserDelegate {
             currentCurrency?.CurrencyCodeL = currentCharacters
             }
         
-      /*  if  elementName == "Name" {
-            currentCurrency?.Name = currentCharacters
-            }*/
         
         if  elementName == "Units" {
             currentCurrency?.Units = currentCharacters
